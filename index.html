@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS Clothing</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>👗 JS Clothing</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">New Arrivals</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="products" id="productList">
+
+      <!-- Product 1 -->
+      <div class="product">
+        <img src="images\pink blouse.jpg" alt="pink blouse">
+        <h3>Pink Blouse</h3>
+        <p class="desc">Elegant pastel top perfect for casual days.</p>
+        <p class="price">₱599</p>
+        <button onclick="addToCart('pink blouse', 599)">Add to Cart</button>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product">
+        <img src="images\Floral Skirt.webp" alt="Floral Skirt">
+        <h3>Floral Skirt</h3>
+        <p class="desc">Soft and flowy skirt for a feminine look.</p>
+        <p class="price">₱799</p>
+        <button onclick="addToCart('Floral Skirt', 799)">Add to Cart</button>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product">
+        <img src="images\Pastel Dress.webp" alt="Pastel Dress">
+        <h3>Pastel Dress</h3>
+        <p class="desc">Charming pastel dress perfect for spring outings.</p>
+        <p class="price">₱999</p>
+        <button onclick="addToCart('Pastel Dress', 999)">Add to Cart</button>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product">
+        <img src="images\Beige Handbag.webp" alt="Beige Handbag">
+        <h3>Beige Handbag</h3>
+        <p class="desc">Stylish handbag that completes your outfit.</p>
+        <p class="price">₱899</p>
+        <button onclick="addToCart('Beige Handbag', 899)">Add to Cart</button>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="product">
+        <img src="images\Cozy Sweater.jpg" alt="Cozy Sweater">
+        <h3>Cozy Sweater</h3>
+        <p class="desc">Soft knit sweater to keep you warm in style.</p>
+        <p class="price">₱699</p>
+        <button onclick="addToCart('Cozy Sweater', 699)">Add to Cart</button>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="product">
+        <img src="images\Cute Sandal.jpg" alt="Cute Sandals">
+        <h3>Cute Sandals</h3>
+        <p class="desc">Comfy and trendy sandals for daily wear.</p>
+        <p class="price">₱499</p>
+        <button onclick="addToCart('Cute Sandals', 499)">Add to Cart</button>
+      </div>
+
+    </div>
+
+    <div class="cart">
+      <h2>🛍️ Your Cart</h2>
+      <div id="cartItems"></div>
+      <div class="cart-total" id="cartTotal">Total: ₱0</div>
+      <button class="checkout-btn" onclick="checkout()">Checkout</button>
+    </div>
+  </div>
+  
+
+  <footer>
+    © 2025 JS Clothing | All Rights Reserved 💕
+  </footer>
+
+  <div id="popup" class="popup"></div>
+  <script src="script.js"></script>
+</body>
+</html>
