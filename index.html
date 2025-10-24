@@ -78,26 +78,10 @@
     </div>
 
     <!-- 🛒 CART MODAL -->
-  <div id="cartModal" class="modal">
-    <div class="modal-content">
-      <span id="closeModal" class="close">&times;</span>
-      <h2>Your Cart</h2>
+  <div class="cart">
+      <h2>🛍️ Your Cart</h2>
       <div id="cartItems"></div>
-      <p id="cartTotal">Total: ₱0</p>
-
-      <h3>Customer Information</h3>
-      <input type="text" id="custName" placeholder="Full Name" required>
-      <input type="text" id="custAddress" placeholder="Delivery Address" required>
-      <input type="text" id="custNumber" placeholder="Phone Number" required>
-
-      <h3>Payment Method</h3>
-      <select id="paymentMethod">
-        <option value="">Select Payment Method</option>
-        <option value="COD">Cash on Delivery (COD)</option>
-        <option value="GCASH">GCASH</option>
-        <option value="PAYMAYA">PayMaya</option>
-        <option value="BANK">Bank Transfer</option>
-      </select>
+      <div class="cart-total" id="cartTotal">Total: ₱0</div>
       <button class="checkout-btn" onclick="checkout()">Checkout</button>
     </div>
   </div>
@@ -111,4 +95,5 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
